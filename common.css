@@ -59,6 +59,17 @@ button {
     border-radius: 3px;
 }
 
+input[type="radio"] {
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+    appearance: radio;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+}
+
+
 textarea {
     resize: vertical;
 }
@@ -109,11 +120,4 @@ select {
 }
     border-radius: 3px;
     background-color: #fff;
-}
-
-input[type="radio"] {
-    visibility: visible;
-    width: auto;
-    height: auto;
-    margin-right: 5px;
 }
