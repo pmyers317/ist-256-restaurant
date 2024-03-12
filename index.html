@@ -29,22 +29,36 @@
                 <option value="Sub">Sub</option>
             </select><br><br>
 
-            <div id="burgerCustomization" class="radio-container">
+            <div id="burgerCustomization" style="display: none;">
+                <h3>Burger Customization:</h3>
                 <input type="radio" id="burgerSizeSmall" name="burgerSize" value="Small">
                 <label for="burgerSizeSmall">Small</label><br>
                 <input type="radio" id="burgerSizeMedium" name="burgerSize" value="Medium">
                 <label for="burgerSizeMedium">Medium</label><br>
                 <input type="radio" id="burgerSizeLarge" name="burgerSize" value="Large">
                 <label for="burgerSizeLarge">Large</label><br>
+
+                <input type="checkbox" id="addCheese" name="addCheese" value="Cheese">
+                <label for="addCheese">Add Cheese</label><br>
+
+                <input type="checkbox" id="addBacon" name="addBacon" value="Bacon">
+                <label for="addBacon">Add Bacon</label><br>
             </div>
 
-            <div id="subCustomization" class="radio-container">
-                <input type="radio" id="breadTypeWhite" name="breadType" value="White">
-                <label for="breadTypeWhite">White</label><br>
-                <input type="radio" id="breadTypeWheat" name="breadType" value="Wheat">
-                <label for="breadTypeWheat">Wheat</label><br>
-                <input type="radio" id="breadTypeItalian" name="breadType" value="Italian">
-                <label for="breadTypeItalian">Italian</label><br>
+            <div id="subCustomization" style="display: none;">
+                <h3>Sub Customization:</h3>
+                <select id="breadType" name="breadType">
+                    <option value="White">White</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Italian">Italian</option>
+                </select><br><br>
+
+                <select id="subToppings" name="subToppings[]" multiple>
+                    <option value="Lettuce">Lettuce</option>
+                    <option value="Tomato">Tomato</option>
+                    <option value="Onion">Onion</option>
+                    <option value="Pickles">Pickles</option>
+                </select><br><br>
             </div>
 
             <button type="submit">Submit Order</button>
