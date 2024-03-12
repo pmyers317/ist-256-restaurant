@@ -79,7 +79,6 @@ button:hover {
     margin-top: 5px;
 }
 
-/* Customization section styles */
 #burgerCustomization,
 #subCustomization {
     margin-top: 20px;
@@ -109,5 +108,12 @@ select {
     margin-bottom: 50px;
 }
     border-radius: 3px;
-    background-color: #fff; /* Ensure dropdown is visible */
+    background-color: #fff;
+}
+
+input[type="radio"] {
+    visibility: visible;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
 }
