@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, p, ul, li, form, input, textarea, button, select {
+body, h1, h2, h3, form, input, textarea, button, select {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,10 +29,9 @@ footer {
     background-color: #FF5733;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+    bottom: 0;
     width: 100%;
-    font-size: 14px;
-    margin-top: 20px;
 }
 
 form {
@@ -69,7 +68,6 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    margin-bottom: 20px;
 }
 
 button:hover {
@@ -105,59 +103,10 @@ select {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
+
+.main-content {
+    margin-bottom: 50px;
+}
     border-radius: 3px;
     background-color: #fff;
-}
-
-.radio-container {
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.radio-container input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.radio-checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #ccc;
-    border-radius: 50%;
-}
-
-.radio-container:hover input ~ .radio-checkmark {
-    background-color: #bfbfbf;
-}
-
-.radio-container input:checked ~ .radio-checkmark {
-    background-color: #FF5733;
-}
-
-.radio-checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.radio-container input:checked ~ .radio-checkmark:after {
-    display: block;
-}
-
-.radio-container .radio-checkmark:after {
-    top: 6px;
-    left: 6px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
 }
